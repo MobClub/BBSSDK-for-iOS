@@ -1,0 +1,84 @@
+{
+    "default":
+    {
+        "default/04.gif": ":'(",
+        "default/13.gif": ":loveliness:",
+        "default/07.gif": ":P",
+        "default/20.gif": ":victory:",
+        "default/05.gif": ":@",
+        "default/15.gif": ":curse:",
+        "default/23.gif": ":handshake",
+        "default/02.gif": ":(",
+        "default/11.gif": ":Q",
+        "default/24.gif": ":call:",
+        "default/01.gif": ":)",
+        "default/09.gif": ";P",
+        "default/10.gif": ":L",
+        "default/03.gif": ":D",
+        "default/18.gif": ":sleepy:",
+        "default/19.gif": ":hug:",
+        "default/12.gif": ":lol",
+        "default/08.gif": ":$",
+        "default/17.gif": ":shutup:",
+        "default/21.gif": ":time:",
+        "default/22.gif": ":kiss:",
+        "default/06.gif": ":o",
+        "default/14.gif": ":funk:",
+        "default/16.gif": ":dizzy:"
+    },
+
+    "coolmonkey":
+    {
+        "coolmonkey/10.gif": "{:2_34:}",
+        "coolmonkey/16.gif": "{:2_40:}",
+        "coolmonkey/14.gif": "{:2_38:}",
+        "coolmonkey/03.gif": "{:2_27:}",
+        "coolmonkey/09.gif": "{:2_33:}",
+        "coolmonkey/13.gif": "{:2_37:}",
+        "coolmonkey/02.gif": "{:2_26:}",
+        "coolmonkey/08.gif": "{:2_32:}",
+        "coolmonkey/12.gif": "{:2_36:}",
+        "coolmonkey/01.gif": "{:2_25:}",
+        "coolmonkey/07.gif": "{:2_31:}",
+        "coolmonkey/05.gif": "{:2_29:}",
+        "coolmonkey/11.gif": "{:2_35:}",
+        "coolmonkey/06.gif": "{:2_30:}",
+        "coolmonkey/15.gif": "{:2_39:}",
+        "coolmonkey/04.gif": "{:2_28:}"
+    },
+
+    "grapeman":
+    {
+        "grapeman/03.gif": "{:3_43:}",
+        "grapeman/15.gif": "{:3_55:}",
+        "grapeman/01.gif": "{:3_41:}",
+        "grapeman/13.gif": "{:3_53:}",
+        "grapeman/11.gif": "{:3_51:}",
+        "grapeman/23.gif": "{:3_63:}",
+        "grapeman/21.gif": "{:3_61:}",
+        "grapeman/08.gif": "{:3_48:}",
+        "grapeman/06.gif": "{:3_46:}",
+        "grapeman/18.gif": "{:3_58:}",
+        "grapeman/04.gif": "{:3_44:}",
+        "grapeman/16.gif": "{:3_56:}",
+        "grapeman/02.gif": "{:3_42:}",
+        "grapeman/14.gif": "{:3_54:}",
+        "grapeman/12.gif": "{:3_52:}",
+        "grapeman/24.gif": "{:3_64:}",
+        "grapeman/10.gif": "{:3_50:}",
+        "grapeman/22.gif": "{:3_62:}",
+        "grapeman/09.gif": "{:3_49:}",
+        "grapeman/20.gif": "{:3_60:}",
+        "grapeman/07.gif": "{:3_47:}",
+        "grapeman/19.gif": "{:3_59:}",
+        "grapeman/05.gif": "{:3_45:}",
+        "grapeman/17.gif": "{:3_57:}"
+    }
+
+}
+
+
+
+
+
+

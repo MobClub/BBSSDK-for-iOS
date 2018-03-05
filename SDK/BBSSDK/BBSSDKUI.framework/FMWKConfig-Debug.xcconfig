@@ -1,0 +1,29 @@
+//
+//  Config-Debug.xcconfig
+//  
+//
+//  Created by 冯鸿杰 on 17/2/10.
+//  Copyright © 2017年 Mob. All rights reserved.
+//
+
+SDKROOT = iphoneos
+
+SKIP_INSTALL = YES
+
+TARGETED_DEVICE_FAMILY = 1,2
+
+IPHONEOS_DEPLOYMENT_TARGET = 8.0
+
+DEAD_CODE_STRIPPING = NO
+
+LINK_WITH_STANDARD_LIBRARIES = NO
+
+MACH_O_TYPE = mh_object
+
+OTHER_LDFLAGS = -ObjC
+
+WRAPPER_EXTENSION = framework
+
+OTHER_CFLAGS = -fembed-bitcode
+
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
