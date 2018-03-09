@@ -161,6 +161,116 @@
  */
 @property (nonatomic, strong) NSString *forumPic;
 
+#pragma mark - ********* 门户 *********
+/**
+ 文章id
+ */
+@property (nonatomic, assign) NSInteger aid;
+
+/**
+ 标题
+ */
+@property (nonatomic, strong) NSString *title;
+
+/**
+ 作者id
+ */
+@property (nonatomic, assign) NSInteger authorid;
+
+/**
+ 时间
+ */
+@property (nonatomic, assign) NSInteger dateline;
+
+/**
+ 查看次数
+ */
+@property (nonatomic, assign) NSInteger viewnum;
+
+/**
+ 评论次数
+ */
+@property (nonatomic, assign) NSInteger commentnum;
+
+/**
+ 分享次数
+ */
+@property (nonatomic, assign) NSInteger sharetimes;
+
+/**
+ 封面图片
+ */
+@property (nonatomic, strong) NSString *pic;
+
+/**
+ 鲜花数
+ */
+@property (nonatomic, assign) NSInteger click1;
+
+/**
+ 握手数
+ */
+@property (nonatomic, assign) NSInteger click2;
+
+/**
+ 雷人数
+ */
+@property (nonatomic, assign) NSInteger click3;
+
+/**
+ 路过数
+ */
+@property (nonatomic, assign) NSInteger click4;
+
+/**
+ 鸡蛋数
+ */
+@property (nonatomic, assign) NSInteger click5;
+
+/**
+ 内容
+ */
+@property (nonatomic, strong) NSString *content;
+
+/**
+ <#Description#>
+ */
+@property (nonatomic, strong) NSArray *related;
+
+/**
+ 1-允许评论，0-不允许评论
+ */
+@property (nonatomic, assign) NSInteger allowcomment;
+
+/**
+ 搜索专用字段:取值为:thread,user,post,portal
+ */
+@property (nonatomic, strong) NSString *type;
+
+/**
+ 栏目名
+ */
+@property (nonatomic, strong) NSString *catname;
+
+/**
+ 分享链接
+ */
+@property (nonatomic, strong) NSString *shareurl;
+
+/**
+ 门户的原作者
+ */
+//@property (nonatomic, strong) NSString *author;
+
+/**
+ 门户的发布者
+ */
+//@property (nonatomic, strong) NSString *username;
+
+/**
+ 发布者id
+ */
+@property (nonatomic, assign) NSInteger originUid;
 
 + (BBSThread *)threadModelFromDictionary:(NSDictionary *)threadDic;
 

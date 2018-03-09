@@ -161,6 +161,11 @@
 @property (nonatomic, strong) NSNumber *follow;
 
 /**
+ 是否允许匿名发帖
+ */
+@property (nonatomic, strong) NSNumber *allowAnonymous;
+
+/**
  根据res字典初始化属性
  */
 - (void) setValueForPropertiesWithDictionary:(NSDictionary *)res;

@@ -12,9 +12,18 @@
 #import "BBSThread.h"
 #import "BBSPost.h"
 #import "BBSFans.h"
+#import "BBSComment.h"
 #import "BBSInformation.h"
 
 @interface BBSSDK : NSObject
+
+/**
+ 获取全局配置
+ 
+ @param result 回调
+ */
++ (void)getGlobalSettings:(void(^)(NSDictionary *settings, NSError *error))result;
+
 
 /**
  获取版块列表
@@ -95,6 +104,8 @@
 + (void)postThreadWithFid:(NSInteger)fid
                   subject:(NSString *)subject
                   message:(NSString *)message
+              isanonymous:(NSInteger)isanonymous
+            hiddenreplies:(NSInteger)hiddenreplies
                    result:(void(^)(NSError *))result;
 
 /**
@@ -412,4 +423,77 @@
  */
 + (void)setupAppkey:(NSString *)appkey appSecret:(NSString *)secret;
 
+
+#pragma mark - *********** 门户 **********
+
+/**
+ 获取热帖banner列表
+ 
+ @param result 回调
+ */
++ (void)getPortalBannerList:(void (^)(NSArray *bannnerList, NSError *error))result;
+
+/**
+ 获取帖子列表
+ 
+ @param catid 类别id
+ @param result 回调
+ */
++ (void)getPortalListWithCatid:(NSInteger)catid
+                     pageIndex:(NSInteger)pageIndex
+                      pageSize:(NSInteger)pageSize
+                        result:(void (^)(NSArray *threadList, NSError *error))result;
+
+/**
+ 获取门户频道列表
+ 
+ @param result 回调
+ */
++ (void)getPortalCategories:(void (^)(NSArray *categories, NSError *error))result;
+
+/**
+ 获取门户详情
+ 
+ @param aid 文章id
+ @param result 回调
+ */
++ (void)getPortalDetailWithAid:(NSInteger)aid
+                        result:(void(^)(BBSThread *,NSError *))result;
+
+/**
+ 门户点赞
+ 
+ @param aid 文章id
+ @param clickid __nullable 默认1,1鲜花 2握手 3雷人 4路过 5鸡蛋
+ @param result 回调
+ */
++ (void)likePortalWithAid:(NSInteger)aid
+                  clickid:(NSNumber *) clickid
+                   result:(void(^)(NSError *))result;
+
+/**
+ 发评论
+ 
+ @param aid 文章id
+ @param uid 用户id
+ @param message 消息内容
+ @param result 回调
+ */
++ (void)postPortalCommentWithAid:(NSInteger)aid
+                             uid:(NSInteger)uid
+                         message:(NSString *)message
+                          result:(void(^)(BBSComment *,NSError *))result;
+
+/**
+ 获取门户文章评论列表
+ 
+ @param aid 文章id
+ @param pageIndex 页索引
+ @param pageSize 每页请求大小
+ @param result 回调
+ */
++ (void)getPortalCommentListWithAid:(NSInteger)aid
+                          pageIndex:(NSInteger)pageIndex
+                           pageSize:(NSInteger)pageSize
+                             result:(void (^)(NSArray *__strong, NSError *__strong))result;
 @end

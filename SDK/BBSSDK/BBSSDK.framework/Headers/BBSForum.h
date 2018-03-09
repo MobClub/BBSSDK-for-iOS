@@ -61,4 +61,9 @@
  */
 @property (nonatomic, copy)         NSString *forumBigPic;
 
+/**
+ 是否允许匿名发帖（0:不允许，1:允许）
+ */
+@property (nonatomic, assign) NSInteger allowAnonymous;
+
 @end

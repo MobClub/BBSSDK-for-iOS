@@ -64,5 +64,23 @@
  */
 @property (nonatomic, copy) NSString *extension;
 
+#pragma mark - 门户新增
+@property (nonatomic, strong) NSString *filename;
+
+@property (nonatomic, strong) NSString *filetype;
+
+@property (nonatomic, assign) NSInteger dateline;
+
+@property (nonatomic, assign) NSInteger thumb;
+
+@property (nonatomic, assign) NSInteger attachid;
+
+@property (nonatomic, assign) NSInteger remote;
+
+@property (nonatomic, assign) NSInteger aid;
+
+@property (nonatomic, assign) NSInteger isimage;
+
+@property (nonatomic, assign) NSInteger filesize;
 
 @end
