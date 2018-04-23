@@ -57,6 +57,23 @@
  */
 @property (nonatomic, strong) NSString *fromType;
 
+/**
+ 地址简称
+ */
+@property (nonatomic, copy) NSString *poiTitle;
+
+/**
+ 经纬度 纬度
+ */
+@property (nonatomic, assign) float latitude;
+
+
+/**
+ 经纬度 经度
+ */
+@property (nonatomic, assign) float longitude;
+
+
 + (BBSComment *)portalCommentFromDictionary:(NSDictionary *)dic;
 
 @end

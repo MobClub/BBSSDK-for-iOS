@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BBSUIRichTextEditor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- Custom CSS Styling -->
+<style type="text/css">
+    
+    /* Custom CSS Styling */
+    
+    /*customcss*/
+    
+</style>
+
+<!-- jQuery Source For BBSUIRichTextEditor -->
+<script>
+<!-- jQuery -->
+</script>
+        
+<!-- JSBeautifier Source for BBSUIRichTextEditor -->
+<script>
+<!-- jsbeautifier -->
+</script>
+
+<!-- Javascript for BBSUIRichTextEditor -->
+<script>
+<!--editor-->
+</script>
+
+<!-- CSS Styles for BBSUIRichTextEditor -->
+<style type="text/css">
+
+/* Default BBSUIRichTextEditor Styling */
+* {
+	outline: 0px solid transparent;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+}
+ 
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+      
+body {
+	padding: 10px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+
+img.zs_active {
+	border: 2px dashed #000;
+}
+      
+audio {
+	padding: 20px 0;
+}
+
+div.zs_editor_content {
+	width: 100%;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow:auto;
+}
+
+[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #BABABA; 
+}
+
+[placeholder]:empty:focus:before {
+    content: "";
+}
+	
+</style>
+
+</head>
+
+<body onLoad="bbsui_editor.init();">
+
+	<!-- BBSUIRichTextEditor Editable Content -->
+	<div id="bbsui_editor_content" class="zs_editor_content" contenteditable="true" placeholder=""></div>
+
+	<!-- Footer -->
+	<div id="bbsui_editor_footer"></div>
+
+</body>
+</html>

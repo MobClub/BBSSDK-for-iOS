@@ -11,6 +11,19 @@
 
 @interface BBSForum : MOBFDataModel
 
+//====
+
+/**
+ fup 父板块id
+ */
+@property (nonatomic, assign) NSInteger fup;
+
+/**
+ 今日帖子数量
+ */
+@property (nonatomic, readonly) NSInteger todayposts;
+
+
 /**
  版块id
  */
@@ -65,5 +78,19 @@
  是否允许匿名发帖（0:不允许，1:允许）
  */
 @property (nonatomic, assign) NSInteger allowAnonymous;
+
+/**
+ 版块分组标题
+ */
+@property (nonatomic, strong, readonly) NSString *groupName;
+
+/**
+ 是否展开
+ */
+@property (nonatomic, assign) BOOL isExpect;
+/**
+ 是否编辑
+ */
+@property (nonatomic, assign) BOOL hasEdited;
 
 @end

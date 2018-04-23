@@ -166,6 +166,11 @@
 @property (nonatomic, strong) NSNumber *allowAnonymous;
 
 /**
+ 签到入口地址 当authorid为空的时候提供
+ */
+@property (nonatomic, copy) NSString *signurl;
+
+/**
  根据res字典初始化属性
  */
 - (void) setValueForPropertiesWithDictionary:(NSDictionary *)res;

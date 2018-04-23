@@ -75,6 +75,22 @@
 @property (nonatomic, copy) NSString *deviceName;
 
 /**
+ 地址简称
+ */
+@property (nonatomic, copy) NSString *poiTitle;
+
+/**
+ 经纬度 纬度
+ */
+@property (nonatomic, assign) float latitude;
+
+
+/**
+ 经纬度 经度
+ */
+@property (nonatomic, assign) float longitude;
+
+/**
  根据字典返回模型
  */
 - (instancetype)initWithDictionary:(NSDictionary *)postDic;

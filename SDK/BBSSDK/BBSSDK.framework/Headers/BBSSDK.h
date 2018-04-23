@@ -14,8 +14,17 @@
 #import "BBSFans.h"
 #import "BBSComment.h"
 #import "BBSInformation.h"
+#import "BBSLocation.h"
 
 @interface BBSSDK : NSObject
+
+
+/**
+ BBSSDK 版本号
+
+ @return 版本号
+ */
++ (NSString *)sdkVersion;
 
 /**
  获取全局配置
@@ -106,6 +115,23 @@
                   message:(NSString *)message
               isanonymous:(NSInteger)isanonymous
             hiddenreplies:(NSInteger)hiddenreplies
+                   result:(void(^)(NSError *))result __deprecated_msg("discard form v2.4.0，please use postThreadWithFid:subject:message:isanonymous:hiddenreplies:location:result:");
+
+/**
+ 发帖
+ 
+ @param fid 帖子版块id
+ @param subject 标题
+ @param message 内容html
+ @param location 定位信息 可空
+ @param result 回调
+ */
++ (void)postThreadWithFid:(NSInteger)fid
+                  subject:(NSString *)subject
+                  message:(NSString *)message
+              isanonymous:(NSInteger)isanonymous
+            hiddenreplies:(NSInteger)hiddenreplies
+                 location:(BBSLocation *)location
                    result:(void(^)(NSError *))result;
 
 /**
@@ -121,6 +147,23 @@
                        tid:(NSInteger)tid
                     reppid:(NSInteger)reppid
                    message:(NSString *)message
+                    result:(void(^)(BBSPost *, NSError *))result __deprecated_msg("discard form v2.4.0，please use postCommentWithFid:tid:reppid:message:location:result:");
+
+/**
+ 发评论
+ 
+ @param fid 板块id
+ @param tid 主贴id
+ @param reppid 被回复的帖子id
+ @param message 消息内容
+ @param location 定位信息 可空
+ @param result 回调
+ */
++ (void)postCommentWithFid:(NSInteger)fid
+                       tid:(NSInteger)tid
+                    reppid:(NSInteger)reppid
+                   message:(NSString *)message
+                   location:(BBSLocation *)location
                     result:(void(^)(BBSPost *, NSError *))result;
 
 /**
@@ -134,6 +177,7 @@
                              tid:(NSInteger)tid
                           result:(void(^)(BBSThread *,NSError *error))result;
 
+
 /**
  注册接口
  
@@ -145,6 +189,21 @@
 + (void)registUserWithUserName:(NSString *)userName
                          email:(NSString *)email
                       password:(NSString *)password
+                        result:(void(^)(BBSUser * , NSError *error))result __deprecated_msg("discard form v2.4.0，please use registUserWithUserName:email:password:coordinate:result");
+
+/**
+ 注册接口
+ 
+ @param userName 用户名
+ @param email 邮箱
+ @param password 密码
+ @param coordinate 经纬度
+ @param result 回调
+ */
++ (void)registUserWithUserName:(NSString *)userName
+                         email:(NSString *)email
+                      password:(NSString *)password
+                    coordinate:(BBSLocationCoordinate *)coordinate
                         result:(void(^)(BBSUser * , NSError *error))result;
 
 /**
@@ -162,6 +221,25 @@
                  password:(NSString *)password
                questionid:(NSInteger)questionid
                    answer:(NSString *)answer
+                   result:(void(^)(BBSUser * ,id res, NSError *error))result __deprecated_msg("discard form v2.4.0，please use loginWithUserName:email:password:questionid:answer:coordinate:result");
+
+/**
+ 登录接口
+ 
+ @param userName 用户名
+ @param email 邮箱
+ @param password 密码
+ @param questionid 问题id
+ @param answer 问题答案
+ @param coordinate 经纬度
+ @param result 回调
+ */
++ (void)loginWithUserName:(NSString *)userName
+                    email:(NSString *)email
+                 password:(NSString *)password
+               questionid:(NSInteger)questionid
+                   answer:(NSString *)answer
+               coordinate:(BBSLocationCoordinate *)coordinate
                    result:(void(^)(BBSUser * ,id res, NSError *error))result;
 
 /**
@@ -186,7 +264,34 @@
                    password:(NSString *)password
                  questionId:(NSNumber *)questionId
                      answer:(NSString *)answer
+                     result:(void(^)(BBSUser *user, id res, NSError *error))result __deprecated_msg("discard form v2.4.0，please use authLoginWithOpenid:unionid:authType:createNew:userName:email:password:questionId:answer:coordinate:result:");
+
+/**
+ 授权登录
+ 
+ @param openid openid微信和qq的唯一标示
+ @param unionid 判断是否唯一，如果有一定要带上
+ @param authType 授权类型：微信 = wechat；QQ = qq
+ @param createNew 如果openid还没有创建账号，1=创建新账号，0=绑定现有账号
+ @param userName 用户名
+ @param email 邮箱
+ @param password 密码
+ @param questionId 问答id
+ @param answer 问答答案
+ @param coordinate 经纬度
+ */
++ (void)authLoginWithOpenid:(NSString *)openid
+                    unionid:(NSString *)unionid
+                   authType:(NSString *)authType
+                  createNew:(NSNumber *)createNew
+                   userName:(NSString *)userName
+                      email:(NSString *)email
+                   password:(NSString *)password
+                 questionId:(NSNumber *)questionId
+                     answer:(NSString *)answer
+                 coordinate:(BBSLocationCoordinate *)coordinate
                      result:(void(^)(BBSUser *user, id res, NSError *error))result;
+
 
 /**
  登出
@@ -347,6 +452,15 @@
                                pageSize:(NSInteger)pageSize
                                  result:(void(^)(NSArray<BBSThread *> *array, NSError *))result;
 
+
+
+/**
+ 获取appKey， appSecert
+ type  1：时尚版（专业），2：简约版（专业）
+ @param result 回调
+ */
++ (void)getSginUrlWithType:(NSString *)type Result:(void(^)(NSString *objStr, NSError *))result;
+
 /**
  喜欢帖子
  
@@ -445,6 +559,16 @@
                         result:(void (^)(NSArray *threadList, NSError *error))result;
 
 /**
+ 获取当前用户的关注用户的帖子列表
+
+ @param result 回调
+ */
++(void)getFollowThreadsListWithPageIndex:(NSInteger)pageIndex
+                                pageSize:(NSInteger)pageSize
+                                  result:(void (^)(NSArray *followList, NSError *error))result;
+
+
+/**
  获取门户频道列表
  
  @param result 回调
@@ -482,7 +606,23 @@
 + (void)postPortalCommentWithAid:(NSInteger)aid
                              uid:(NSInteger)uid
                          message:(NSString *)message
+                          result:(void(^)(BBSComment *,NSError *))result  __deprecated_msg("discard form v2.4.0，please use postPortalCommentWithAid:uid:message:location:result:");
+
+/**
+ 发评论
+ 
+ @param aid 文章id
+ @param uid 用户id
+ @param message 消息内容
+ @param location 定位信息 可空
+ @param result 回调
+ */
++ (void)postPortalCommentWithAid:(NSInteger)aid
+                             uid:(NSInteger)uid
+                         message:(NSString *)message
+                         location:(BBSLocation *)location
                           result:(void(^)(BBSComment *,NSError *))result;
+
 
 /**
  获取门户文章评论列表
@@ -496,4 +636,6 @@
                           pageIndex:(NSInteger)pageIndex
                            pageSize:(NSInteger)pageSize
                              result:(void (^)(NSArray *__strong, NSError *__strong))result;
+
+
 @end

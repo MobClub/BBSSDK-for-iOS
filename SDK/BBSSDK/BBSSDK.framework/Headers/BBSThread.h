@@ -161,6 +161,23 @@
  */
 @property (nonatomic, strong) NSString *forumPic;
 
+/**
+ 地址简称
+ */
+@property (nonatomic, copy) NSString *poiTitle;
+
+/**
+ 经纬度 纬度
+ */
+@property (nonatomic, assign) float latitude;
+
+
+/**
+ 经纬度 经度
+ */
+@property (nonatomic, assign) float longitude;
+
+
 #pragma mark - ********* 门户 *********
 /**
  文章id

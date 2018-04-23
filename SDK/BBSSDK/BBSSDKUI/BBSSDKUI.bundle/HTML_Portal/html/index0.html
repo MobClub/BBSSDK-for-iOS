@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>详情页</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/md.css">
+		<script>
+			function goPostLocation(){
+				document.getElementById('postTitle').scrollIntoView();
+			}
+		</script>
+	</head>
+	<body>
+    	<div id="details" v-if="article!=null" v-cloak>
+    		<!--文章 start-->
+    		<div class="article">
+    			<div class="article-title">{{ article.title }}</div>
+                        <!--作者 start-->
+                        <div class="author">
+                                <div class="author-left">
+                                        <div class="author-info">
+                                            <div>文：{{ article.author }}</div>
+                                            <div>{{ timeSet(article.dateline) }}</div>
+                                        </div>
+                                </div>
+                            <div class="view">查看<span>{{ formatView(article.viewnum) }}</span></div>
+                        </div>
+                        <!--作者 end-->
+    			<div class="article-text markdown-body" v-html="article.content"></div>
+    			<ul class="flie-list" v-if="article.attachments.length>0">
+    				<li v-for="atta in article.attachments">
+    					<!--<div class="file-img"><img src="../assets/images/fileicon-default.png"/></div>-->
+    					<div class="file-name">{{ atta.filename }}</div>
+    					<a href="javascript:;" @click="openAttachment(atta)">{{ atta.isimage==1 ? "打开附件" : "下载附件" }}</a>
+    				</li>
+    			</ul>
+    		</div>
+    		<!--文章 end-->
+                <div class="relate" v-if="article.related.length>0">
+                    <div class="postTitle"><img src="../assets/images/relate.png"/>咨询相关</div>
+                    <div v-for="related in article.related">
+                        <div v-if="related.pic.length>0"  class="mob-wrap" @click="openRelatedArticle(related.aid)">
+                            <img :src="related.pic">
+                        </div>
+
+                        <div class="con" @click="openRelatedArticle(related.aid)">
+                            <h3>{{ related.title }}</h3>
+                            <div class="summary">{{ related.summary }}</div>
+                        </div>
+                    </div>
+                </div>
+    		<!--评论 start-->
+			<div id="postTitle"></div>
+                <div class="postTitle"><img src="../assets/images/postTitle.png"/>评论</div>
+    		<ul class="comment" v-if="commentList.length>0" id="comm">
+    			<li v-for="(list,index) in commentList">
+                            <div class="t">
+                                <div class="m-l-0"><img @click="openAuthor(list.uid)" :src="list.avatar"/></div>
+                                <div class="name">{{ list.username }}</div>
+                                <div>{{ timeSet(list.dateline) }}</div>
+                            </div>
+                            <div class="c"  v-html="list.message"></div>
+                            <div class="comment-reply-box" v-if="list.prePost && list.prePost!=null">
+                                <dl class="comment-reply">
+                                        <dd>引用：{{ list.prePost.author }}于{{ timeSet(list.prePost.createdOn) }}发表的：<span v-html="list.prePost.message"></span></dd>
+                                </dl>
+                            </div>
+    			</li>
+    		</ul>
+    		<!--评论 end-->
+                <div class="bottom-loading"><div class="loading" v-if="loading"></div><span v-if="loading">加载中</span><span v-if="!loading && !noMore">更多</span><span v-if="noMore"><template v-if="commentList.length<1"><div class="nomore">暂无评论~</div></template><template v-if="commentList.length>0">暂无更多</template></span></div>
+    		
+    	</div>
+		<script src="../assets/js/base.js"></script>
+		<script src="../assets/js/BBSSDK.js"></script>
+		<script src="../assets/js/details.js"></script>
+	</body>
+</html>
