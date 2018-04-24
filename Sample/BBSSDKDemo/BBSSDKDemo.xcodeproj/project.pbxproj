@@ -117,6 +117,12 @@
 		2F9A3343208DEB79005BFACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3342208DEB79005BFACC /* UIKit.framework */; };
 		2F9A3345208DEB92005BFACC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3344208DEB91005BFACC /* OpenGLES.framework */; };
 		2F9A3347208DEB97005BFACC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3346208DEB97005BFACC /* GLKit.framework */; };
+		2F9A3349208ECA96005BFACC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3348208ECA96005BFACC /* libsqlite3.0.tbd */; };
+		2F9A334B208ECA9F005BFACC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A334A208ECA9F005BFACC /* JavaScriptCore.framework */; };
+		2F9A334D208ECAA9005BFACC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A334C208ECAA8005BFACC /* libstdc++.6.0.9.tbd */; };
+		2F9A334F208ECAB0005BFACC /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A334E208ECAB0005BFACC /* libz.1.1.3.tbd */; };
+		2F9A3351208ECABD005BFACC /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3350208ECABD005BFACC /* libicucore.A.tbd */; };
+		2F9A3353208ECAEE005BFACC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3352208ECAEE005BFACC /* CoreData.framework */; };
 		3A3536821FA87B64001FD200 /* MyBBSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3536801FA87B63001FD200 /* MyBBSViewController.xib */; };
 		3A3536831FA87B64001FD200 /* MyBBSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3536811FA87B63001FD200 /* MyBBSViewController.m */; };
 		3A7B28EC1FA71E0F00DE01D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B28EB1FA71E0F00DE01D1 /* main.m */; };
@@ -124,11 +130,6 @@
 		3A7B28F21FA71E0F00DE01D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B28F11FA71E0F00DE01D1 /* ViewController.m */; };
 		3A7B28F71FA71E0F00DE01D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7B28F61FA71E0F00DE01D1 /* Assets.xcassets */; };
 		3A7B28FA1FA71E0F00DE01D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7B28F81FA71E0F00DE01D1 /* LaunchScreen.storyboard */; };
-		3A7B2B131FA7201B00DE01D1 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7B2B121FA7201B00DE01D1 /* libicucore.A.tbd */; };
-		3A7B2B151FA7202000DE01D1 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7B2B141FA7202000DE01D1 /* libz.1.1.3.tbd */; };
-		3A7B2B171FA7202500DE01D1 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7B2B161FA7202500DE01D1 /* libstdc++.6.0.9.tbd */; };
-		3A7B2B191FA7203300DE01D1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7B2B181FA7203300DE01D1 /* JavaScriptCore.framework */; };
-		3A7B2B1B1FA7203900DE01D1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7B2B1A1FA7203900DE01D1 /* libsqlite3.0.tbd */; };
 		3A7B2B1F1FA7211700DE01D1 /* MOBShareSDKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B2B1E1FA7211700DE01D1 /* MOBShareSDKHelper.m */; };
 		3AEDBB311FFCD07300B43A6E /* Default-414w-736h@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AEDBB2F1FFCD07300B43A6E /* Default-414w-736h@3x.jpg */; };
 		3AEDBB321FFCD07300B43A6E /* ssssss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AEDBB301FFCD07300B43A6E /* ssssss.jpg */; };
@@ -323,6 +324,12 @@
 		2F9A3342208DEB79005BFACC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F9A3344208DEB91005BFACC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2F9A3346208DEB97005BFACC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2F9A3348208ECA96005BFACC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2F9A334A208ECA9F005BFACC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2F9A334C208ECAA8005BFACC /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		2F9A334E208ECAB0005BFACC /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		2F9A3350208ECABD005BFACC /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
+		2F9A3352208ECAEE005BFACC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3A35367F1FA87B63001FD200 /* MyBBSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBBSViewController.h; sourceTree = "<group>"; };
 		3A3536801FA87B63001FD200 /* MyBBSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBBSViewController.xib; sourceTree = "<group>"; };
 		3A3536811FA87B63001FD200 /* MyBBSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBBSViewController.m; sourceTree = "<group>"; };
@@ -335,11 +342,6 @@
 		3A7B28F61FA71E0F00DE01D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A7B28F91FA71E0F00DE01D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A7B28FB1FA71E0F00DE01D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A7B2B121FA7201B00DE01D1 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
-		3A7B2B141FA7202000DE01D1 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
-		3A7B2B161FA7202500DE01D1 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		3A7B2B181FA7203300DE01D1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		3A7B2B1A1FA7203900DE01D1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3A7B2B1D1FA7211700DE01D1 /* MOBShareSDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBShareSDKHelper.h; sourceTree = "<group>"; };
 		3A7B2B1E1FA7211700DE01D1 /* MOBShareSDKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBShareSDKHelper.m; sourceTree = "<group>"; };
 		3AD207F41FA73C2F00257D62 /* BBSSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BBSSDKDemo.entitlements; sourceTree = "<group>"; };
@@ -352,6 +354,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9A3353208ECAEE005BFACC /* CoreData.framework in Frameworks */,
+				2F9A3351208ECABD005BFACC /* libicucore.A.tbd in Frameworks */,
+				2F9A334F208ECAB0005BFACC /* libz.1.1.3.tbd in Frameworks */,
+				2F9A334D208ECAA9005BFACC /* libstdc++.6.0.9.tbd in Frameworks */,
+				2F9A334B208ECA9F005BFACC /* JavaScriptCore.framework in Frameworks */,
+				2F9A3349208ECA96005BFACC /* libsqlite3.0.tbd in Frameworks */,
 				2F9A3347208DEB97005BFACC /* GLKit.framework in Frameworks */,
 				2F9A3345208DEB92005BFACC /* OpenGLES.framework in Frameworks */,
 				2F9A3343208DEB79005BFACC /* UIKit.framework in Frameworks */,
@@ -363,12 +371,9 @@
 				2F9A3337208DEB3B005BFACC /* SystemConfiguration.framework in Frameworks */,
 				2F9A3335208DEB33005BFACC /* Security.framework in Frameworks */,
 				2F9A3333208DEB2C005BFACC /* AdSupport.framework in Frameworks */,
-				3A7B2B191FA7203300DE01D1 /* JavaScriptCore.framework in Frameworks */,
 				2F9A3331208DEB1E005BFACC /* libz.tbd in Frameworks */,
-				3A7B2B171FA7202500DE01D1 /* libstdc++.6.0.9.tbd in Frameworks */,
 				2F9A332F208DEB0B005BFACC /* libc++.tbd in Frameworks */,
 				2F9A3323208DE903005BFACC /* WechatConnector.framework in Frameworks */,
-				3A7B2B1B1FA7203900DE01D1 /* libsqlite3.0.tbd in Frameworks */,
 				2F9A3329208DE903005BFACC /* libWeChatSDK.a in Frameworks */,
 				2F9A331A208DE903005BFACC /* MOBFoundation.framework in Frameworks */,
 				2F9A32CF208DE903005BFACC /* AMapFoundationKit.framework in Frameworks */,
@@ -377,7 +382,6 @@
 				2F9A32D1208DE903005BFACC /* MAMapKit.framework in Frameworks */,
 				2F9A32CA208DE903005BFACC /* BBSSDK.framework in Frameworks */,
 				2F9A3321208DE903005BFACC /* QQConnector.framework in Frameworks */,
-				3A7B2B151FA7202000DE01D1 /* libz.1.1.3.tbd in Frameworks */,
 				2F9A32D0208DE903005BFACC /* AMapSearchKit.framework in Frameworks */,
 				2F9A331E208DE903005BFACC /* ShareSDKExtension.framework in Frameworks */,
 				2F9A3322208DE903005BFACC /* SinaWeiboConnector.framework in Frameworks */,
@@ -388,7 +392,6 @@
 				2F9A3325208DE903005BFACC /* TencentOpenAPI.framework in Frameworks */,
 				2F9A332C208DE903005BFACC /* ShareSDKConnector.framework in Frameworks */,
 				2F9A3324208DE903005BFACC /* WhatsAppConnector.framework in Frameworks */,
-				3A7B2B131FA7201B00DE01D1 /* libicucore.A.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +910,12 @@
 		2F9A332D208DEB0B005BFACC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F9A3352208ECAEE005BFACC /* CoreData.framework */,
+				2F9A3350208ECABD005BFACC /* libicucore.A.tbd */,
+				2F9A334E208ECAB0005BFACC /* libz.1.1.3.tbd */,
+				2F9A334C208ECAA8005BFACC /* libstdc++.6.0.9.tbd */,
+				2F9A334A208ECA9F005BFACC /* JavaScriptCore.framework */,
+				2F9A3348208ECA96005BFACC /* libsqlite3.0.tbd */,
 				2F9A3346208DEB97005BFACC /* GLKit.framework */,
 				2F9A3344208DEB91005BFACC /* OpenGLES.framework */,
 				2F9A3342208DEB79005BFACC /* UIKit.framework */,
@@ -927,7 +936,6 @@
 		3A7B28DE1FA71E0F00DE01D1 = {
 			isa = PBXGroup;
 			children = (
-				3A7B2B1C1FA720BA00DE01D1 /* Framework */,
 				3A7B28E91FA71E0F00DE01D1 /* BBSSDKDemo */,
 				3A7B28E81FA71E0F00DE01D1 /* Products */,
 				2F9A332D208DEB0B005BFACC /* Frameworks */,
@@ -972,18 +980,6 @@
 				3A7B28EB1FA71E0F00DE01D1 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3A7B2B1C1FA720BA00DE01D1 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				3A7B2B1A1FA7203900DE01D1 /* libsqlite3.0.tbd */,
-				3A7B2B181FA7203300DE01D1 /* JavaScriptCore.framework */,
-				3A7B2B161FA7202500DE01D1 /* libstdc++.6.0.9.tbd */,
-				3A7B2B141FA7202000DE01D1 /* libz.1.1.3.tbd */,
-				3A7B2B121FA7201B00DE01D1 /* libicucore.A.tbd */,
-			);
-			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
