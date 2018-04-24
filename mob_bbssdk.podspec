@@ -23,23 +23,24 @@ Pod::Spec.new do |s|
     s.subspec 'BBSSDKUI' do |sp|
     	sp.vendored_frameworks = 'SDK/BBSSDK/BBSSDKUI/BBSSDKUI.framework'
     	sp.resources = 'SDK/BBSSDK/BBSSDKUI/BBSSDKUI.bundle'
-        sp.dependency 'mob_bbssdk/BBSSDK'
+      
+      sp.dependency 'mob_bbssdk/BBSSDK'
 
-        sp.frameworks = "CoreData", "JavaScriptCore"
-        sp.libraries = "sqlite3"
+      sp.frameworks = "CoreData", "JavaScriptCore"
+      sp.libraries = "icucore", "z", "stdc++.6.0.9", "sqlite3"
 
-        # 使用到第三方库
-        sp.dependency "SDWebImage", "~> 4.2.1"
-        sp.dependency "UITableView+FDTemplateLayoutCell", "~> 1.6"
-        sp.dependency "Masonry", "~> 1.1.0"
-        sp.dependency "MBProgressHUD", "~> 1.1.0"
-        sp.dependency "SVProgressHUD", "~> 2.2.2"
-        sp.dependency "MJRefresh", "~> 3.1.15"
-        sp.dependency "YYImage", "~> 1.0.4"
+      # 使用到第三方库
+      sp.dependency "SDWebImage", "~> 4.2.1"
+      sp.dependency "UITableView+FDTemplateLayoutCell", "~> 1.6"
+      sp.dependency "Masonry", "~> 1.1.0"
+      sp.dependency "MBProgressHUD", "~> 1.1.0"
+      sp.dependency "SVProgressHUD", "~> 2.2.2"
+      sp.dependency "MJRefresh", "~> 3.1.15"
+      sp.dependency "YYImage", "~> 1.0.4"
 
-        # 使用高德地图
-        sp.dependency "AMap2DMap"
-        sp.dependency "AMapSearch"
+      # 使用高德地图
+      sp.dependency "AMap2DMap"
+      sp.dependency "AMapSearch"
 
   	end
 
@@ -48,22 +49,22 @@ Pod::Spec.new do |s|
   	s.subspec 'BBSSDKUI_WF' do |sp|
     	sp.vendored_frameworks = 'SDK/BBSSDK/BBSSDKUI_WF/BBSSDKUI.framework'
     	sp.resources = 'SDK/BBSSDK/BBSSDKUI_WF/BBSSDKUI.bundle'
-        sp.dependency 'mob_bbssdk/BBSSDK'
-        
-        sp.frameworks = "CoreData", "JavaScriptCore"
-        sp.libraries = "sqlite3"
+      sp.dependency 'mob_bbssdk/BBSSDK'
 
-        # 使用到第三方库
-        sp.dependency "SDWebImage", "~> 4.2.1"
-        sp.dependency "UITableView+FDTemplateLayoutCell", "~> 1.6"
-        sp.dependency "Masonry", "~> 1.1.0"
-        sp.dependency "MBProgressHUD", "~> 1.1.0"
-        sp.dependency "SVProgressHUD", "~> 2.2.2"
-        sp.dependency "MJRefresh", "~> 3.1.15"
-        sp.dependency "YYImage", "~> 1.0.4"
+      sp.frameworks = "CoreData", "JavaScriptCore"
+      sp.libraries = "icucore", "z", "stdc++.6.0.9", "sqlite3"
 
-        # 使用高德地图
-        sp.dependency "AMap2DMap"
-        sp.dependency "AMapSearch"
+      # 使用到第三方库
+      sp.dependency "SDWebImage", "~> 4.2.1"
+      sp.dependency "UITableView+FDTemplateLayoutCell", "~> 1.6"
+      sp.dependency "Masonry", "~> 1.1.0"
+      sp.dependency "MBProgressHUD", "~> 1.1.0"
+      sp.dependency "SVProgressHUD", "~> 2.2.2"
+      sp.dependency "MJRefresh", "~> 3.1.15"
+      sp.dependency "YYImage", "~> 1.0.4"
+
+      # 使用高德地图
+      sp.dependency "AMap2DMap"
+      sp.dependency "AMapSearch"
   	end
 end
