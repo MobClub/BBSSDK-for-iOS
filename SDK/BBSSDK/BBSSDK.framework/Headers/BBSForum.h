@@ -21,7 +21,7 @@
 /**
  今日帖子数量
  */
-@property (nonatomic, readonly) NSInteger todayposts;
+@property (nonatomic, assign) NSInteger todayposts;
 
 
 /**

@@ -124,6 +124,15 @@ var details=new Vue({
 				    imgList.push($(this).attr("src_link"))
 				})
 			    BBSSDKNative.downloadImages(imgList)
+                            //$mob.native.log("===========================");
+                            var w = document.getElementById("detail_a").offsetWidth;
+                            //$mob.native.log("1===============" + w + "============");
+                            var video = document.getElementsByTagName("iframe");
+                            for(v in video ){
+                            //$mob.native.log("2===============" + v + "============" + w * 0.75);
+                            video[v].width = w
+                            video[v].height = w*0.75
+                            }
 			})
     		
     		// console.log(JSON.stringify(this.article, null,2))

@@ -82,8 +82,6 @@
 		2F9A3314208DE903005BFACC /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A3292208DE903005BFACC /* YYImage.m */; };
 		2F9A3315208DE903005BFACC /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A3294208DE903005BFACC /* YYImageCoder.m */; };
 		2F9A3316208DE903005BFACC /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A3296208DE903005BFACC /* YYSpriteSheetImage.m */; };
-		2F9A3317208DE903005BFACC /* BBSSDKUI.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A3297208DE903005BFACC /* BBSSDKUI.xcdatamodel */; };
-		2F9A3318208DE903005BFACC /* BBSSDKUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A3298208DE903005BFACC /* BBSSDKUI.xcdatamodeld */; };
 		2F9A3319208DE903005BFACC /* MobLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A329D208DE903005BFACC /* MobLink.framework */; };
 		2F9A331A208DE903005BFACC /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A329F208DE903005BFACC /* MOBFoundation.framework */; };
 		2F9A331B208DE903005BFACC /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A32A1208DE903005BFACC /* ShareSDK.framework */; };
@@ -280,10 +278,6 @@
 		2F9A3294208DE903005BFACC /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
 		2F9A3295208DE903005BFACC /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		2F9A3296208DE903005BFACC /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
-		2F9A3297208DE903005BFACC /* BBSSDKUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BBSSDKUI.xcdatamodel; sourceTree = "<group>"; };
-		2F9A3299208DE903005BFACC /* BBSSDKUI 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BBSSDKUI 2.xcdatamodel"; sourceTree = "<group>"; };
-		2F9A329A208DE903005BFACC /* BBSSDKUI 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BBSSDKUI 3.xcdatamodel"; sourceTree = "<group>"; };
-		2F9A329B208DE903005BFACC /* BBSSDKUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BBSSDKUI.xcdatamodel; sourceTree = "<group>"; };
 		2F9A329D208DE903005BFACC /* MobLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobLink.framework; sourceTree = "<group>"; };
 		2F9A329F208DE903005BFACC /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		2F9A32A1208DE903005BFACC /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
@@ -433,8 +427,6 @@
 			isa = PBXGroup;
 			children = (
 				2F9A31F7208DE903005BFACC /* 3rdPart */,
-				2F9A3297208DE903005BFACC /* BBSSDKUI.xcdatamodel */,
-				2F9A3298208DE903005BFACC /* BBSSDKUI.xcdatamodeld */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1100,7 +1092,6 @@
 				2F9A3315208DE903005BFACC /* YYImageCoder.m in Sources */,
 				2F9A32D9208DE903005BFACC /* MASConstraintMaker.m in Sources */,
 				2F9A32DF208DE903005BFACC /* View+MASAdditions.m in Sources */,
-				2F9A3318208DE903005BFACC /* BBSSDKUI.xcdatamodeld in Sources */,
 				2F9A32FE208DE903005BFACC /* SDWebImageDownloaderOperation.m in Sources */,
 				2F9A32DA208DE903005BFACC /* MASLayoutConstraint.m in Sources */,
 				2F9A32E0208DE903005BFACC /* ViewController+MASAdditions.m in Sources */,
@@ -1143,7 +1134,6 @@
 				2F9A330F208DE903005BFACC /* SVRadialGradientLayer.m in Sources */,
 				2F9A3308208DE903005BFACC /* UIView+WebCacheOperation.m in Sources */,
 				3A7B28EC1FA71E0F00DE01D1 /* main.m in Sources */,
-				2F9A3317208DE903005BFACC /* BBSSDKUI.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1335,21 +1325,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2F9A3298208DE903005BFACC /* BBSSDKUI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2F9A3299208DE903005BFACC /* BBSSDKUI 2.xcdatamodel */,
-				2F9A329A208DE903005BFACC /* BBSSDKUI 3.xcdatamodel */,
-				2F9A329B208DE903005BFACC /* BBSSDKUI.xcdatamodel */,
-			);
-			currentVersion = 2F9A329A208DE903005BFACC /* BBSSDKUI 3.xcdatamodel */;
-			path = BBSSDKUI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3A7B28DF1FA71E0F00DE01D1 /* Project object */;
 }

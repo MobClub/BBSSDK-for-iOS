@@ -34,7 +34,7 @@ body {
 	color: #333;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: #eaedf2;
+	background-color: #ffffff;
     word-break: break-word;
 }
 
@@ -121,6 +121,18 @@ button:active,input[type=button]:active {
 }[v-cloak] {
 	display: none
 }
+.location{
+	display:inline-block;
+	font-family: PingFangSC-Regular;
+	font-size: 10px;
+	color: #ACADB8;
+	letter-spacing: 0;
+	line-height: 16px;
+	padding:6px 10px 6px 23px;
+	background: #F2F3F7 url('../images/location.png') no-repeat 10px;
+	margin-bottom:.5rem;
+	border-radius: 2px;
+}
 
 .author {
 	padding: 11px 0 11px 0;
@@ -185,6 +197,12 @@ button:active,input[type=button]:active {
     margin-right: 10px;
     float: left;
 }
+.author-info .line{
+    border-left: 1px solid #eeeeee;
+    width: 1px;
+    height: 13px;
+    margin-top: 2px;
+}
 .article {
 	padding: .8rem .75rem;
 	background-color: #fff;
@@ -231,6 +249,10 @@ button:active,input[type=button]:active {
     font-size: 12px;
     text-align: center;
 }
+.bottom .like1 img{
+    width: 55px;
+    height: 55px;
+}
 .relate{
     color: #6a7081!important;
     font-size: .7rem;
@@ -243,8 +265,8 @@ button:active,input[type=button]:active {
     border-bottom: 1px solid #dddddd;
 }
 .relate .right{
-    width: 4.8rem;
-    max-height: 4.8rem;
+    width: 4.5rem;
+    max-height: 4.5rem;
     float: right;
     overflow: hidden;
 }
@@ -281,6 +303,7 @@ button:active,input[type=button]:active {
     color: #ACADB8;
     font-size: 14px;
     font-family: Semibold;
+	background-color:#eaedf2;
 }
 .mob-wrap{
     width: 100%;
@@ -419,7 +442,14 @@ button:active,input[type=button]:active {
     line-height: 1.1rem;
     color: #abafba
 }
-
+.nomore{
+    display: block;
+    height: 8rem;
+    line-height: 8rem;
+    font-size: 0.7rem;
+    color: #666666;
+    font-weight: bold; 
+}
 .comment-reply dd {
     padding: .1rem 0
 }
@@ -531,16 +561,4 @@ button:active,input[type=button]:active {
 	width: 3.1rem;
 	text-align: right;
 	line-height: 1rem
-}
-
-.location{
-    display:inline-block;
-    font-family: PingFangSC-Regular;
-    font-size: 10px;
-    color: #ACADB8;
-    letter-spacing: 0;
-    line-height: 10px;
-    padding:5px 10px 5px 20px;
-    background: #F2F3F7 url('../images/location.png') no-repeat 5px;
-    margin-bottom:.5rem;
 }

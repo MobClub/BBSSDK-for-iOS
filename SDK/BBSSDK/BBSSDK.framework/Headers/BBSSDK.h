@@ -455,11 +455,15 @@
 
 
 /**
- 获取appKey， appSecert
- type  1：时尚版（专业），2：简约版（专业）
+ 获取签到地址
+ 
+ @param type 1：时尚版（专业），2：简约版（专业）
+ @param userUid 用户ID
+ @param enterSignUrl 签到入口地址可从获取个人详情页信息接口获得
+ @param time 请求时间戳
  @param result 回调
  */
-+ (void)getSginUrlWithType:(NSString *)type Result:(void(^)(NSString *objStr, NSError *))result;
++ (void)getSginUrlWithType:(NSString *)type userUid:(NSNumber *)userUid enterSignUrl:(NSString *)enterSignUrl time:(NSTimeInterval )time Result:(void(^)(NSString *sginUrl, NSError *))result;
 
 /**
  喜欢帖子

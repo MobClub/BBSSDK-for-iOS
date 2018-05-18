@@ -33,7 +33,7 @@
                             <div class="view">查看<span>{{ formatView(article.viewnum) }}</span></div>
                         </div>
                         <!--作者 end-->
-    			<div class="article-text markdown-body" v-html="article.content"></div>
+    			<div class="article-text markdown-body" id="detail_a" v-html="article.content"></div>
     			<ul class="flie-list" v-if="article.attachments.length>0">
     				<li v-for="atta in article.attachments">
     					<!--<div class="file-img"><img src="../assets/images/fileicon-default.png"/></div>-->
@@ -72,7 +72,7 @@
                                         <dd>引用：{{ list.prePost.author }}于{{ timeSet(list.prePost.createdOn) }}发表的：<span v-html="list.prePost.message"></span></dd>
                                 </dl>
                             </div>
-                           <span @click="openAddress(list)" class="location" v-if="list.POITitle && list.POITitle != ''">{{ list.POITitle }}</span>
+					<span class="location" v-if="list.POITitle" @click="openAddress(list)">{{ list.POITitle }}</span>
     			</li>
     		</ul>
     		<!--评论 end-->
@@ -80,7 +80,15 @@
     		
     	</div>
 		<script src="../assets/js/base.js"></script>
+		<script src="../assets/js/NativeExt.js"></script>
 		<script src="../assets/js/BBSSDK.js"></script>
 		<script src="../assets/js/details.js"></script>
+		<script type="text/javascript">
+            $function(){
+                
+            }
+        
+        </script>
+        
 	</body>
 </html>

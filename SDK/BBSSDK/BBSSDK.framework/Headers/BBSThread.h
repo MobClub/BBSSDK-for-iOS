@@ -177,6 +177,11 @@
  */
 @property (nonatomic, assign) float longitude;
 
+/**
+ replyshow 如果等于1的时候回复时刷新主题帖
+ */
+@property (nonatomic, assign) NSInteger replyShow;
+
 
 #pragma mark - ********* 门户 *********
 /**

@@ -122,6 +122,18 @@ button:active,input[type=button]:active {
 	display: none
 }
 
+.location{
+	display:inline-block;
+	font-family: PingFangSC-Regular;
+	font-size: 10px;
+	color: #ACADB8;
+	letter-spacing: 0;
+	line-height: 16px;
+	padding:6px 10px 6px 23px;
+	background: #F2F3F7 url('../images/location.png') no-repeat 10px;
+	margin-top:10px;
+	border-radius: 2px;
+}
 .author {
 	padding: 11px 0 11px 0;
 	display: -webkit-box;
@@ -528,16 +540,4 @@ button:active,input[type=button]:active {
 	width: 3.1rem;
 	text-align: right;
 	line-height: 1rem
-}
-
-.location{
-    display:inline-block;
-    font-family: PingFangSC-Regular;
-    font-size: 10px;
-    color: #ACADB8;
-    letter-spacing: 0;
-    line-height: 10px;
-    padding:5px 10px 5px 20px;
-    background: #F2F3F7 url('../images/location.png') no-repeat 5px;
-    margin-top:10px;
 }
