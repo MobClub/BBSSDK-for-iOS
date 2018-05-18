@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'mob_bbssdk'
-  s.version               = "2.3.0"
+  s.version               = "2.4.0"
   s.summary               = 'BBSSDK把你的论坛搬到手机上，简单配置完成后，即可快速初始化您的论坛SDK，集成生成App，开启您的移动时代。'
   s.license               = 'MIT'
   s.author                = { "mob" => "mobproducts@163.com" }
@@ -25,6 +25,11 @@ Pod::Spec.new do |s|
     	sp.resources = 'SDK/BBSSDK/BBSSDKUI/BBSSDKUI.bundle'
       
       sp.dependency 'mob_bbssdk/BBSSDK'
+      sp.dependency 'mob_linksdk'
+      sp.dependency 'mob_sharesdk'
+      sp.dependency 'mob_sharesdk/ShareSDKPlatforms/QQ'
+      sp.dependency 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+      sp.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
 
       sp.frameworks = "CoreData", "JavaScriptCore"
       sp.libraries = "icucore", "z", "stdc++.6.0.9", "sqlite3"
@@ -50,6 +55,11 @@ Pod::Spec.new do |s|
     	sp.vendored_frameworks = 'SDK/BBSSDK/BBSSDKUI_WF/BBSSDKUI.framework'
     	sp.resources = 'SDK/BBSSDK/BBSSDKUI_WF/BBSSDKUI.bundle'
       sp.dependency 'mob_bbssdk/BBSSDK'
+      sp.dependency 'mob_linksdk'
+      sp.dependency 'mob_sharesdk'
+      sp.dependency 'mob_sharesdk/ShareSDKPlatforms/QQ'
+      sp.dependency 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+      sp.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
 
       sp.frameworks = "CoreData", "JavaScriptCore"
       sp.libraries = "icucore", "z", "stdc++.6.0.9", "sqlite3"
