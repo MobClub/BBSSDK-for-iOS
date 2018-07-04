@@ -43,8 +43,8 @@
                                 <div>查看<span>{{ article.views }}</span></div>
                                 <div><img :src="article.forumPic">{{ article.forumName }}</div>
                         </div>
-                <span @click="openAddress(article)" class="location" v-if="article.POITitle && article.POITitle != ''">{{ article.POITitle }}</span>
-    			<div class="article-text markdown-body" v-html="article.message"></div>
+						<span class="location" v-if="!article.isPlug&&article.POITitle" @click="openAddress(article)">{{ article.POITitle }}</span>
+    			<div  id="detail_a" class="article-text markdown-body" v-html="article.message"></div>
     			<ul class="flie-list" v-if="article.attachments!=null">
     				<li v-for="atta in article.attachments">
     					<!--<div class="file-img"><img src="../assets/images/fileicon-default.png"/></div>-->
@@ -87,7 +87,7 @@
     					</div>
     					<div class="comment-bottom">{{ timeSet(list.createdOn) }}<span class="comment-device">来自{{ list.deviceName }}</span><button @click="reply(list)" class="btn-reply">回复</button></div>
     				</div>-->
-                <span @click="openAddress(list)" class="location" v-if="list.POITitle && list.POITitle != ''">{{ list.POITitle }}</span>
+					<span class="location" v-if="!article.isPlug&&list.POITitle" @click="openAddress(list)">{{ list.POITitle }}</span>
     			</li>
     		</ul>
     		<!--评论 end-->
@@ -95,13 +95,14 @@
     		
     	</div>
 		<script src="../assets/js/base.js"></script>
+		<script src="../assets/js/NativeExt.js"></script>
 		<script src="../assets/js/BBSSDK.js"></script>
 		<script src="../assets/js/details.js"></script>
-        <script type="text/javascript">
+		<script type="text/javascript">
             var video = document.getElementsByName("video");
-            var w = document.getElementById("detail_a").offsetWidth;
+			var w = document.getElementById("detail_a").offsetWidth;
             for(v in video ){
-                video[v].width = w
+				video[v].width = w
                 video[v].height = w*0.75
             }
         </script>

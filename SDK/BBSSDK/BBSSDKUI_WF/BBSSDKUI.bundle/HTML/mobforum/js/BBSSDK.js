@@ -185,6 +185,7 @@
                         if(item.prePost){
                             html += '<div class="reply"><p class="sub"><strong>引用：</strong>'+ item.prePost.author +'于'+ timeDiff(item.prePost.createdOn) +'发表的：'+ item.prePost.message +'</p></div>';
                         }
+                        
                         html += '<div class="bottom"><span>'+ timeDiff(item.createdOn) +'</span><span>来自 '+item.deviceName+'</span><span class="tip" reply-data="'+ index +'">回复</span></div></li>';
                         var prePostdata = item;
                         prePostLists.push(prePostdata);

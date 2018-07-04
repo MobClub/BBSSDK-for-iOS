@@ -72,7 +72,7 @@
                                         <dd>引用：{{ list.prePost.author }}于{{ timeSet(list.prePost.createdOn) }}发表的：<span v-html="list.prePost.message"></span></dd>
                                 </dl>
                             </div>
-					<span class="location" v-if="list.POITitle" @click="openAddress(list)">{{ list.POITitle }}</span>
+					<span class="location" v-if="!article.isPlug&&list.POITitle" @click="openAddress(list)">{{ list.POITitle }}</span>
     			</li>
     		</ul>
     		<!--评论 end-->
@@ -83,12 +83,15 @@
 		<script src="../assets/js/NativeExt.js"></script>
 		<script src="../assets/js/BBSSDK.js"></script>
 		<script src="../assets/js/details.js"></script>
-		<script type="text/javascript">
-            $function(){
-                
-            }
-        
-        </script>
-        
+<!-- 		<script type="text/javascript">
+		$(function(){
+		            var video = document.getElementsByTagName("iframe");
+			var w = document.getElementById("detail_a").offsetWidth;
+		            for(v in video ){
+				video[v].width = w
+		                video[v].height = w*0.75
+		            }
+		})
+		        </script> -->
 	</body>
 </html>

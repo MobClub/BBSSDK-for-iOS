@@ -88,8 +88,8 @@
 								<dd>引用：{{ list.prePost.author }}于{{ timeSet(list.prePost.dateline) }}发表的：<span v-html="list.prePost.message"></span></dd>
 	    					</dl>
     					</div>
-    					<div class="comment-bottom">{{ timeSet(list.dateline) }}<span class="comment-device">来自{{ list.deviceName }}</span></div>
-						<span class="location" v-if="list.POITitle" @click="openAddress(list)">{{ list.POITitle }}</span>
+    					<div class="comment-bottom">{{ timeSet(list.dateline) }}<span class="comment-device" v-if="!article.isPlug">来自{{ list.deviceName }}</span></div>
+						<span class="location" v-if="!article.isPlug&&list.POITitle" @click="openAddress(list)">{{ list.POITitle }}</span>
     				</div>
     			</li>
     		</ul>
@@ -103,7 +103,14 @@
 		<script src="../assets/js/BBSSDK.js"></script>
 		<script src="../assets/js/details.js"></script>
 		<script type="text/javascript">
-		
+		$(function(){
+            var video = document.getElementsByTagName("iframe");
+			var w = document.getElementById("detail_a").offsetWidth;
+            for(v in video ){
+				video[v].width = w
+                video[v].height = w*0.75
+            }
+		})
         </script>
 	</body>
 </html>

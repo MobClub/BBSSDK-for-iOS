@@ -105,6 +105,9 @@ var details=new Vue({
                                                   var i=''
                                                   $("img[src_flag]").each(function(){
                                                                           n++
+                                                                          if($(this).attr("smilieid")) {
+                                                                          return true
+                                                                          }
                                                                           imgList.push($(this).attr("src_link"))
                                                                           if(md==$(this).attr("src_tag")){
                                                                           i=n
@@ -123,6 +126,9 @@ var details=new Vue({
                     _this.article=detailData
                     _this.$nextTick(function () {
                                     $(".article-text img").each(function(){
+                                                                if($(this).attr("smilieid")){
+                                                                return true
+                                                                }
                                                                 $(this).attr("src_link",$(this).attr("src"))
                                                                 $(this).attr("src_tag",md5($(this).attr("src_link")))
                                                                 $(this).addClass(md5($(this).attr("src_link")))

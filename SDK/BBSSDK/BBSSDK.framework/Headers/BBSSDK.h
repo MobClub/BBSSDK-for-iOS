@@ -19,6 +19,15 @@
 @interface BBSSDK : NSObject
 
 
+//---
+
+/**
+ 是否用插件
+
+ @return BOOL
+ */
++(BOOL)isUsePlug;
+
 /**
  BBSSDK 版本号
 
@@ -75,6 +84,7 @@
               pageSize:(NSInteger)pageSize
                 result:(void (^)(NSArray *threadList, NSError *error))result;
 
+//MARK:获取评论列表
 /**
  获取评论列表
 

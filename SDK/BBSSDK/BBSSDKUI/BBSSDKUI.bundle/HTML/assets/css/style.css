@@ -151,10 +151,11 @@ button:active,input[type=button]:active {
 	font-size: 10px;
 	color: #ACADB8;
 	letter-spacing: 0;
-	line-height: 10px;
-	padding:5px 10px 5px 20px;
-	background: #F2F3F7 url('../images/location.png') no-repeat 5px;
+	line-height: 16px;
+	padding:6px 10px 6px 23px;
+	background: #F2F3F7 url('../images/location.png') no-repeat 10px;
 	margin-top:10px;
+	border-radius: 2px;
 }
 .author-right {
 	-ms-flex-negative: 0;

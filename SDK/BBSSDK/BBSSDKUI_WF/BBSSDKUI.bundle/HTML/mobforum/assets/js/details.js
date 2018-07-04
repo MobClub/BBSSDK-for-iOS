@@ -116,6 +116,9 @@ var details=new Vue({
                     _this.article=detailData
                     _this.$nextTick(function () {
                                     $(".article-text img").each(function(){
+                                                                if($(this).attr("smilieid")){
+                                                                return true
+                                                                }
                                                                 $(this).attr("src_link",$(this).attr("src"))
                                                                 $(this).attr("src_tag",md5($(this).attr("src_link")))
                                                                 $(this).addClass(md5($(this).attr("src_link")))

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'mob_bbssdk'
-  s.version               = "2.4.0"
+  s.version               = "2.4.1"
   s.summary               = 'BBSSDK把你的论坛搬到手机上，简单配置完成后，即可快速初始化您的论坛SDK，集成生成App，开启您的移动时代。'
   s.license               = 'MIT'
   s.author                = { "mob" => "mobproducts@163.com" }
