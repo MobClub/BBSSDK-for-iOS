@@ -117,7 +117,6 @@
 		2F9A3347208DEB97005BFACC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3346208DEB97005BFACC /* GLKit.framework */; };
 		2F9A3349208ECA96005BFACC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3348208ECA96005BFACC /* libsqlite3.0.tbd */; };
 		2F9A334B208ECA9F005BFACC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A334A208ECA9F005BFACC /* JavaScriptCore.framework */; };
-		2F9A334D208ECAA9005BFACC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A334C208ECAA8005BFACC /* libstdc++.6.0.9.tbd */; };
 		2F9A334F208ECAB0005BFACC /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A334E208ECAB0005BFACC /* libz.1.1.3.tbd */; };
 		2F9A3351208ECABD005BFACC /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3350208ECABD005BFACC /* libicucore.A.tbd */; };
 		2F9A3353208ECAEE005BFACC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9A3352208ECAEE005BFACC /* CoreData.framework */; };
@@ -351,7 +350,6 @@
 				2F9A3353208ECAEE005BFACC /* CoreData.framework in Frameworks */,
 				2F9A3351208ECABD005BFACC /* libicucore.A.tbd in Frameworks */,
 				2F9A334F208ECAB0005BFACC /* libz.1.1.3.tbd in Frameworks */,
-				2F9A334D208ECAA9005BFACC /* libstdc++.6.0.9.tbd in Frameworks */,
 				2F9A334B208ECA9F005BFACC /* JavaScriptCore.framework in Frameworks */,
 				2F9A3349208ECA96005BFACC /* libsqlite3.0.tbd in Frameworks */,
 				2F9A3347208DEB97005BFACC /* GLKit.framework in Frameworks */,

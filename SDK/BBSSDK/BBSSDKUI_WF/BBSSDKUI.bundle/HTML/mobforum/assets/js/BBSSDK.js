@@ -85,6 +85,7 @@
   $(".photo-browser .photo-browser-swiper-container .swiper-slide").eq(index).find("img").attr("src", "img/default_pic_error.png");
   }
   } else {
+   $mob.native.log('sssssssssssssss' + imgSrc + '========');
   if (imgSrc) {
   $("."+imgUrlMD5).attr("src",imgSrc)
   $("."+imgUrlMD5).attr("src_flag",'1')

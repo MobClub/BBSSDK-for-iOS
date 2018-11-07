@@ -164,7 +164,7 @@ var details=new Vue({
                                                                 }
                                                                 })
                                     
-                                    $mob.native.log('sssssssssssssss');
+                                    $mob.native.log('=================sssssssssssssss');
                                     $mob.native.log(imgList);
                                     
                                     BBSSDKNative.downloadImages(imgList)
