@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'mob_bbssdk'
-  s.version               = "2.4.1"
+  s.version               = "2.5.0"
   s.summary               = 'BBSSDK把你的论坛搬到手机上，简单配置完成后，即可快速初始化您的论坛SDK，集成生成App，开启您的移动时代。'
   s.license               = 'MIT'
   s.author                = { "mob" => "mobproducts@163.com" }
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
       sp.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
 
       sp.frameworks = "CoreData", "JavaScriptCore"
-      sp.libraries = "icucore", "z", "stdc++.6.0.9", "sqlite3"
+      sp.libraries = "icucore", "z", "libc++.tbd", "sqlite3"
 
       # 使用到第三方库
       sp.dependency "SDWebImage", "~> 4.2.1"
