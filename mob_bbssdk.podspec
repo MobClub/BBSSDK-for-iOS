@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
       sp.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
 
       sp.frameworks = "CoreData", "JavaScriptCore"
-      sp.libraries = "icucore", "z", "stdc++.6.0.9", "sqlite3"
+      sp.libraries = "icucore", "z", "sqlite3"
 
       # 使用到第三方库
       sp.dependency "SDWebImage", "~> 4.2.1"
